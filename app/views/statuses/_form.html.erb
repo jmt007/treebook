@@ -1,4 +1,12 @@
-<%= simple_form_for(@status, html: {class: "form-horizontal"}) do |f| %>
+<div class="row">
+   <div class="span4">
+
+<%= simple_form_for(@status, html: {class: "well"}) do |f| %>
+
+<fieldset>
+          <legend>New Status</legend>
+
+
   <% if @status.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@status.errors.count, "error") %> prohibited this status from being saved:</h2>
@@ -17,3 +25,4 @@
     <%= f.button :submit %>
   </div>
 <% end %>
+</fieldset>
