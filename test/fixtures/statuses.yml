@@ -5,5 +5,5 @@ one:
   user: john
 
 two:
- content: MyText
- user: john
+  content: MyText
+  user: john

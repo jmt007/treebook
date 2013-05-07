@@ -4,7 +4,6 @@
 
 <%= link_to "Post New Status", new_status_path, class: "btn btn-large btn-warning" %>
 
-<table>
  <% @statuses.each do |status| %>
  <div class="status">
   <strong><%= status.user.full_name %></strong>
